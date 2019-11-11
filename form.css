@@ -1,0 +1,77 @@
+/* CSS FOR SIGN UP PAGE */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+
+/* Most of the code is self-explanatory */
+
+header {
+    text-align: left;
+}
+
+/* The size of the logo differs on the Sign Up page in comparison
+to the landing page which is why it was necessary to have  */
+
+#commbanklogo {
+    width: 115px;
+}
+
+body {
+    background: url('assets/circles.png')#363636 no-repeat;
+    background-position: 104% 285%;
+    background-size: 70%;
+}
+/* Style the form */
+#regForm {
+    font-family: 'Nanum Gothic', sans-serif;
+    background: #AAA5A7;
+    box-shadow: 10px 10px #363636;
+    color: #ffffff;
+    border-radius: 80px;
+    margin: 20px auto;
+    padding: 50px;
+    width: 40%;
+    min-width: 400px;
+  }
+  
+  /* Style the input fields */
+  input {
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 7px;
+    width: 96%;
+    font-size: 17px;
+    border: none;
+    border-bottom: 2px solid #363636;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    border-bottom: 2px solid rgb(216, 48, 48, 0.735);
+    opacity: 100%;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #000000;
+    border: none; 
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #ffffff;
+  
+ }

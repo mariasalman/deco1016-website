@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<header>
+<div class="logo">
+        <svg id="commbanklogo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 507.62 494.83"><defs><style>.cls-1,.cls-2,.cls-3{fill:none;stroke-linecap:round;}.cls-1,.cls-3{stroke:#000;}.cls-1,.cls-2{stroke-linejoin:round;}.cls-1{stroke-width:17px;}.cls-2{stroke:#ffcd05;stroke-width:16px;}.cls-3{stroke-miterlimit:10;stroke-width:13px;}</style></defs><title>modernlogo</title><path class="cls-1" d="M673.69,1058.14l20.2,19.88-222-218.39L706.67,624.81,871.45,790.62" transform="translate(-463.43 -616.31)"/><path class="cls-2" d="M891.62,808.52,954.16,870,721.07,1103.14,824.92,883.09l41.43-42" transform="translate(-463.43 -616.31)"/><line class="cls-3" x1="438.27" y1="278.63" x2="438.27" y2="403.16"/><line class="cls-3" x1="375.43" y1="340.89" x2="501.12" y2="340.89"/></svg>
+</div>
+<body>
+
+
+<form id="regForm" action="">
+
+        <center><h1>I'll just need a few details from you to help you get started!</h1></center>
+        
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">What would you like us to call you?
+          <p><input placeholder="First Name" oninput="this.className = ''"></p>
+          <p><input placeholder="Last Name" oninput="this.className = ''"></p>
+        </div>
+        
+        <div class="tab">When were you born?
+            <input type="date" name="bday">
+          <!-- <p><input placeholder="DD" oninput="this.className = ''"></p>
+          <p><input placeholder="MM" oninput="this.className = ''"></p>
+          <p><input placeholder="YYYY" oninput="this.className = ''"></p> -->
+        </div>
+
+        <div class="tab">How can we contact you?
+                <p><input placeholder="Email Address" oninput="this.className = ''"></p>
+                <p><input placeholder="Phone Number" oninput="this.className = ''"></p>
+              </div>
+        
+        <div class="tab">Where do you live?
+
+            <p><input placeholder="House/Apt Number, Street Number" oninput="this.className = ''"></p>
+            <p><input placeholder="Suburb/City" oninput="this.className = ''"></p>
+            <p><input placeholder="Postcode" oninput="this.className = ''"></p>
+            <p><input placeholder="State" oninput="this.className = ''"></p>
+            <p><input placeholder="Country" oninput="this.className = ''"></p>
+            <input type="checkbox" name="" value="Use one billing and shipping address"><br>
+           
+        </div>
+
+        <div class="tab">Please confirm your identity by taking a picture of any verified identification cards (e.g. Driver's License, Medicare)
+           <!-- Defining a "choose file" option so people can prove their identity through an image -->
+          <center><p><input type="file" name="myFile"></p> </center>
+              </div>
+
+        <div class="tab">Finally, set a password
+                    <p><input placeholder="Password" oninput="this.className = ''"></p>
+                    <p><input placeholder="Confirm Password" oninput="this.className = ''"></p>
+                  </div>
+        
+                  <center><ul>You'll be done in just 6 steps!</ul></center>
+                  <!-- Defining buttons -->
+        <div style="overflow:auto;">
+          <div style="float:right;">
+          
+
+            <input type="button" onclick="nextPrev(-1)" value="Go Back"/>
+            <input type="button" onclick="nextPrev(1)" value="Next">
+            <input type="button" onclick="location.href='ending.html';" value="Submit"/>
+          </div>
+        </div>
+        
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+
+        </div>
+        
+        </form>
+        <!-- Linking to my javascript file -->
+<script src="script.js"></script>
+    </body>
+    </html>
